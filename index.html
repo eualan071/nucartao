@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <input type="text" id="nome1">
+    <input type="text" id="sobrenome">
+    <input type="email" id="email">
+    <input type="password" id="senha">
+    <input type="tel" id="telefone">
+    <button onclick="cadastrar()" id="cadastro">SOCLICITAR CARTÃO</button>
+     
+
+    <button id="cor1" onclick="cor1()"></button>
+    
+    <button id="cor2" onclick="cor1()"></button>
+    
+    <button id="cor3" onclick="cor1()"></button>
+     <br>
+     <input type="text" id="nome">
+     <button id="ok" onclick="ok()"></button>
+
+     
+
+    
+     
+
+    <style>
+
+        #cor1{
+            background-color: rgb(225, 225, 19);
+            border-color: rgb(225, 225, 19);
+            width: 10px;
+            height: 15px;
+            border-radius: 5px;
+            position: absolute;
+            top: 275px;
+            margin-left: 10px;
+        }
+        #cor2{
+            background-color: rgb(110, 104, 116);
+            border-color: rgb(110, 104, 116);
+            width: 10px;
+            height: 15px;
+            border-radius: 5px;
+            position: absolute;
+            top: 275px;
+            margin-left: 30px;
+            
+        }
+        #cor3{
+            background-color: rgb(43, 189, 226);
+            border-color:rgb(43, 189, 226) ;
+            width: 10px;
+            height: 15px;
+            border-radius: 5px;
+            position: absolute;
+            top: 275px;
+            margin-left: 50px;
+        }
+        #ok{
+           
+            width: 25px;
+            height: 21px;
+            
+            position: absolute;
+            top: 319px;
+            margin-left: 184px;
+        }
+     #cartao{
+         background-color: rgb(172, 38, 209);
+         box-shadow: 2px 3px 5px black;    
+    padding: 55px;
+    width: 110px;
+    position: relative;
+    top: 125px;
+    margin-left: 10px;
+    border-radius:7px 7px 7px 7px;
+     }
+
+     #nome{
+        position: absolute;
+        top: 319px;
+        margin-left: 12px;
+  
+     }
+     #img{
+        width: 50px;
+        position: absolute;
+        top: 160px;
+        margin-left: 175px;
+     }
+     #img2{
+        width: 30px;
+        position: absolute;
+        top: 230px;
+        margin-left: 20px;
+        color: aliceblue;
+     }
+    
+     
+
+     #output{
+        width: px;
+        height: 5px;
+        position: absolute;
+        top: 235px;
+        margin-left: 55px;
+        color: rgb(255, 255, 255);
+        font-size: 12px;
+        font-family: Andale Mono, monospace;
+     }
+
+     body{
+        background-color:#530082;
+     }
+     
+     #digite{
+        width: px;
+        height: 5px;
+        position: absolute;
+        top: 299px;
+        margin-left: 15px;
+        color: rgb(255, 255, 255);
+        font-size: 12px;
+        font-family: Andale Mono, monospace;
+        
+     }
+
+     #cartao, #img, #img2, #output  {
+  animation: float 3s ease-in-out infinite;
+}
+
+
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+#sobrenome{
+    
+    
+   
+    margin-left: 450px;
+    position: absolute;
+    width: 160px;
+    top: 150px;
+}
+
+#digiteseu{
+    color: blueviolet;
+    position: absolute;
+    top: 10px;
+    font-size: medium;
+    margin-left: -59px;
+    text-shadow: 1px 1px 1px 1px black; 
+    
+    
+}
+
+#nome1{
+    margin-left: 270px;
+    position: absolute;
+    width: 160px;
+    top: 150px;
+}
+
+#email{
+    margin-left: 270px;
+    position:absolute;
+    top: 200px;
+    width: 160px;
+}
+
+#sobrenome1{
+    color: aliceblue;
+    position: absolute;
+    top: -35px;
+}
+
+#senha{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 245px;
+    margin-left:270px ;
+}
+
+#nome2{
+    color: aliceblue;
+    position: absolute;
+    top: -35px;
+}
+
+#email1{
+    color: aliceblue;
+    position: absolute;
+    top:-35px;
+    margin-left: 23p;
+}
+
+#senha1{
+    color: aliceblue;
+    position: absolute;
+    top:-35px;
+    margin-left: 23p;
+}
+
+#telefone{
+    
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 200px;
+    margin-left:450px ;
+}
+
+#telefone1{
+    color: aliceblue;
+    position: absolute;
+    top:-35px;
+   
+}
+
+#cadastro{
+    position: absolute;
+    top: 310px;
+    margin-left: 370px;
+    padding: 10px;
+    border-color: #d3c8d9;
+    color: #530082;
+    box-shadow: 1px 3px black;
+    border-radius: 5px;
+}
+
+#titulo{
+    margin-left: 260px;
+    position: absolute;
+    top: 50px;
+    font-size: x-large;
+    color: aliceblue;
+}
+    </style>
+</head>
+<body>
+    
+    
+    <div id="corpo">
+        
+       
+         
+        <h1 id="titulo">PEÇA O SEU ROXINHO CLONADO</h1>
+        
+        <div id="digite">Digite o seu nome</div>
+
+        <div id="cartao"></div>
+        <div id="sobrenome">
+            <p id="sobrenome1">Sobrenome</p>
+        </div>
+        <div id="email">
+            <p id="email1">Email</p>
+        </div>
+        <div id="senha">
+            <p id="senha1">Senha</p>
+        </div>
+
+        <div id="nome1">
+            <p id="nome2">Nome</p>
+        </div>
+
+        <div id="telefone">
+            <p id="telefone1">Telefone</p>
+        </div>
+        <div id="output"></div>
+        <img id="img" src="01.png" alt="">
+        
+        <img id="img2" src="02.png" alt="">
+
+        
+       
+        <div id="output"></div>
+        
+    </div>
+
+
+
+    <script>
+        function ok(){
+        var nome  = document.getElementById("nome").value
+        document.getElementById('output').innerHTML = nome
+        
+        }
+
+        function cadastrar(){
+            alert('cadastro feito com sucesso!')
+        }
+    </script>
+    
+</body>
+</html>
